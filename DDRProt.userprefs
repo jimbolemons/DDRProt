@@ -1,9 +1,11 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Note.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\ChangeScene.cs">
     <Files>
-      <File FileName="Assets\Scripts\Note.cs" Line="26" Column="2" />
-      <File FileName="Assets\Scripts\Spawn.cs" Line="66" Column="17" />
+      <File FileName="Assets\Scripts\ChangeSong.cs" Line="51" Column="30" />
+      <File FileName="Assets\Scripts\ChangeScene.cs" Line="8" Column="43" />
+      <File FileName="Assets\Scripts\Spawn.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Note.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
