@@ -24,25 +24,25 @@ public class Note : MonoBehaviour {
 	}
 	void OnTriggerStay2D(Collider2D col)
 	{
-		if (Input.GetKeyDown(KeyCode.A)) {
+		if (Input.GetKeyDown(KeyCode.LeftArrow)) {
 			if (col.gameObject.tag == "Yellow") 
 			{
 				Destroy (gameObject);
 			}
 		}
-		if (Input.GetKeyDown(KeyCode.S)) {
+		if (Input.GetKeyDown(KeyCode.UpArrow)) {
 			if (col.gameObject.tag == "Red")
 			{
 				Destroy (gameObject);				
 			}
 		}
-		if (Input.GetKeyDown(KeyCode.D)) {
+		if (Input.GetKeyDown(KeyCode.DownArrow)) {
 			if (col.gameObject.tag == "Blue")
 			{
 				Destroy (gameObject);				
 			}
 		}
-		if (Input.GetKeyDown(KeyCode.F)) {
+		if (Input.GetKeyDown(KeyCode.RightArrow)) {
 			if (col.gameObject.tag == "Green")
 			{
 				Destroy (gameObject);				
