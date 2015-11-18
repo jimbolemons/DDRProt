@@ -12,7 +12,9 @@ public class Note : MonoBehaviour {
 		transform.position = pos;
 	}
 	
-	// Update is called once per frame
+	/// <summary>
+	/// this section moves the notes down every frame and destrys them if they get tofar off screen
+	/// </summary>
 	void Update () {
 		Vector3 pos = transform.position;
 		pos.y -= speed * Time.deltaTime;
@@ -22,27 +24,31 @@ public class Note : MonoBehaviour {
 		if (pos.y < -8) Destroy (gameObject);
 
 	}
+	/// <summary>
+	/// this section checks for a colition and if one is detected it checks for a button press and if that is detected it checks for a tag
+	/// </summary>
+	/// <param name="col">Col.</param>
 	void OnTriggerStay2D(Collider2D col)
 	{
-		if (Input.GetKeyDown(KeyCode.A)) {
+		if (Input.GetKeyDown(KeyCode.LeftArrow)) {
 			if (col.gameObject.tag == "Yellow") 
 			{
 				Destroy (gameObject);
 			}
 		}
-		if (Input.GetKeyDown(KeyCode.S)) {
+		if (Input.GetKeyDown(KeyCode.UpArrow)) {
 			if (col.gameObject.tag == "Red")
 			{
 				Destroy (gameObject);				
 			}
 		}
-		if (Input.GetKeyDown(KeyCode.D)) {
+		if (Input.GetKeyDown(KeyCode.DownArrow)) {
 			if (col.gameObject.tag == "Blue")
 			{
 				Destroy (gameObject);				
 			}
 		}
-		if (Input.GetKeyDown(KeyCode.F)) {
+		if (Input.GetKeyDown(KeyCode.RightArrow)) {
 			if (col.gameObject.tag == "Green")
 			{
 				Destroy (gameObject);				

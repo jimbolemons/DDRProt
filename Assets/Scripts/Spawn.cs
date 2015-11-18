@@ -4,7 +4,7 @@ using System.Collections;
 public class Spawn : MonoBehaviour {
 	
 	/// <summary>
-	/// The enemy prefab to spawn.
+	/// The note prefab to spawn.
 	/// </summary>
 	public GameObject notePrefab1;
 	public GameObject notePrefab2;
@@ -19,7 +19,7 @@ public class Spawn : MonoBehaviour {
 	}
 	/// <summary>
 	/// 
-	/// Spawns an enemy.
+	/// Spawns an note.
 	/// </summary>
 	GameObject SpawnNote1(){
 	
@@ -42,7 +42,7 @@ public class Spawn : MonoBehaviour {
 		
 	}
 	/// <summary>
-	/// A coroutine that spawns enemies every half second.
+	/// A coroutine that spawns notes randomly between .75 seconds and 5 seconds.
 	/// </summary>
 	IEnumerator StartSpawning1(){
 		while(true){

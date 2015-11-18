@@ -46,7 +46,11 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\ChangeScene.cs" />
+     <Compile Include="Assets\Scripts\ChangeSong.cs" />
      <Compile Include="Assets\Scripts\Note.cs" />
+     <Compile Include="Assets\Scripts\Pause.cs" />
+     <Compile Include="Assets\Scripts\Pause1.cs" />
      <Compile Include="Assets\Scripts\Spawn.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
